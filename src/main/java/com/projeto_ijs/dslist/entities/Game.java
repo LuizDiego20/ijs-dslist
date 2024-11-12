@@ -23,7 +23,10 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {
@@ -75,12 +78,12 @@ public class Game {
 		this.genre = genre;
 	}
 
-	public String getPlatform() {
+	public String getPlatforms() {
 		return platforms;
 	}
 
-	public void setPlatform(String platform) {
-		this.platforms = platform;
+	public void setPlatforms(String platforms) {
+		this.platforms = platforms;
 	}
 
 	public Double getScore() {
